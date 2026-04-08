@@ -1,0 +1,51 @@
+:root {
+
+    --amareloClaro: #f9f6e5;
+    --azure: #207bb8;
+    --amarelo: #facf23;
+    --preto: #000000;
+    --branco: #ffffff;
+    --verde: #00bf63;
+    --vermelho: #e4392e;
+
+}
+
+#interface {
+
+    background-color: var(--amareloClaro);
+    font-family: "Fredoka";
+    color: var(--preto);
+
+}
+
+#botaoAzul {
+
+    background-color: var(--azure);
+    font-family: "Fredoka";
+    color: var(--branco);
+
+}
+
+#botaoAmarelo {
+
+    background-color: var(--amarelo);
+    font-family: "Fredoka";
+    color: var(--azure);
+
+}
+
+#botaoVermelho {
+
+    background-color: var(--vermelho);
+    font-family: "Fredoka";
+    color: var(--amarelo);
+
+}
+
+#botaoVerde {
+
+    background-color: var(--verde);
+    font-family: "Fredoka";
+    color: var(--amarelo);
+
+}
