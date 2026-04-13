@@ -56,24 +56,22 @@
                     <tbody>
 
                         <tr>
-                            
-                            <th scope="row">1</th>
 
-                            <td>Lego</td>
-                            <td>06/04/2026</td>
-                            <td>Blocos de Montar</td>
-                            <td>12 Anos</td>
-                            <td>R$ 500,00</td>
+                            <td> <%= %> </td>
+                            <td> <%= %> </td>
+                            <td> <%= %> </td>
+                            <td> <%= %> </td>
+                            <td> <%= %> </td>
 
                             <td>
 
-                                <a href="#" class="btn fw-bold w-100" id="botaoAmarelo" href="editar.html"> Editar </a>
+                                <a href="editar.html <%= %>" class="btn fw-bold w-100" id="botaoAmarelo"> Editar </a>
 
                             </td>
 
                             <td>
 
-                                <a href="#" class="btn fw-bold w-100" id="botaoVermelho" href=""> Excluir </a>
+                                <a href="<%= %>" class="btn fw-bold w-100" id="botaoVermelho"> Excluir </a>
 
                             </td>
 
