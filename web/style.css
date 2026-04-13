@@ -14,7 +14,6 @@
 
     background-color: var(--amareloClaro);
     font-family: "Fredoka", sans-serif;
-    color: var(--preto);
 
 }
 
@@ -28,6 +27,12 @@
 .titulo-pagina {
 
     color: var(--azure);
+
+}
+
+.txt-index{
+
+    color: var(--vermelho);
 
 }
 
@@ -72,6 +77,13 @@
         margin-right: 200px;
 
     }
+
+    #logo-index {
+
+        max-width: 200px;
+        margin-bottom: 0;
+
+    }
     
     .titulo-pagina {
 
@@ -79,6 +91,17 @@
         align-items: center;
         line-height: 1;
         font-size: 3.5rem;
+
+    }
+
+    .titulo-pagina-index {
+
+        color: var(--azure);
+        align-items: center;
+        line-height: 1;
+        font-size: 4rem;
+        margin-top: 20px;
+        text-align: center;
 
     }
 
