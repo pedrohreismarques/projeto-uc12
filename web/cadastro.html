@@ -26,7 +26,7 @@
     <header class="d-flex flex-column flex-md-row align-items-center justify-content-center mb-4 gap-md-4">
 
         <img id="logo" src="img/logo.png" alt="Logo Center Toys" class="img-fluid">
-        <h1 class="fw-bold titulo-pagina mb-0" id="titulo-pagina"> Produtos </h1>
+        <h1 class="fw-bold titulo-pagina mb-0" id="titulo-pagina"> Cadastro de Produtos </h1>
 
     </header>
 
@@ -35,21 +35,19 @@
 
         <form class="row mb-3 w-50 mx-auto" name="frmProduto" action="insert">
 
-            <div class="row mb-3">
+            <div class="mb-3">
 
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
+                <input type="text" name="nome" class="form-control" placeholder="Nome do Produto:" maxlength="50"
+                    required>
 
-                    <input type="email" class="form-control" id="inputEmail3">
-
-                </div>
             </div>
 
 
             <div class="mb-3">
 
-                <input type="text" name="fab" class="form-control" placeholder="Data de Fabricação"
-                    aria-label="Digite a fabricação " required>
+                <input type="text" name="fab" class="form-control" placeholder="Data de Fabricação:" maxlength="10"
+                    oninput="let v=this.value.replace(/\D/g,''); if(v.length>2) v=v.slice(0,2)+'/'+v.slice(2); if(v.length>5) v=v.slice(0,5)+'/'+v.slice(5,9); this.value=v;"
+                    required>
 
             </div>
 
@@ -72,24 +70,29 @@
 
             <div class="mb-3">
 
-                <input type="text" name="faixa" class="form-control" placeholder="Faixa"
-                    aria-label="Digite a faixa Etária " required>
+                <input type="text" name="faixa" class="form-control" placeholder="Faixa Etária: (Ex: 5)"
+                    onfocus="this.value = this.value.replace(' anos', '')"
+                    onblur="if(this.value && !this.value.includes(' anos')) this.value += ' anos'" required>
 
             </div>
 
 
             <div class="mb-3">
 
-                <input type="text" name="preco" class="form-control" placeholder="Preço" aria-label="Digite o preço "
+                <input type="text" name="preco" class="form-control" value="R$ 0.00"
+                    oninput="this.value = (Number(this.value.replace(/\D/g, '')) / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })"
                     required>
 
             </div>
 
         </form>
 
-        <button class="btn btn-primary" onclick="validar()"> Cadastrar
+        <div class="d-grid gap-2 col-3 mx-auto">
 
-        </button>
+            <a class="btn btn-primary" id="botaoAzul" type="button" onclick="validar()"> Cadastrar </a>
+            <a class="btn btn-primary" id="botaoVermelho" type="button" href="produtos.html"> Voltar </a>
+
+        </div>
 
     </div>
 

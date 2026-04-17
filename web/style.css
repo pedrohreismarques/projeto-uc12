@@ -136,7 +136,7 @@
 
     background-color: var(--amarelo);
     color: var(--azure);
-    font-size: 0.9rem;
+    font-size: 1rem;
     border: none;
 
 }
@@ -145,7 +145,7 @@
 
     background-color: var(--vermelho);
     color: var(--amarelo);
-    font-size: 0.9rem;
+    font-size: 1rem;
     border: none;
 
 }
