@@ -21,7 +21,8 @@
 
 </head>
 
-<body>
+<body id="interface">
+
     <header class="d-flex flex-column flex-md-row align-items-center justify-content-center mb-4 gap-md-4">
 
         <img id="logo" src="img/logo.png" alt="Logo Center Toys" class="img-fluid">
@@ -30,16 +31,20 @@
     </header>
 
 
-    <div class="container w-50 bg-secondary-subtle text-center py-3">
+    <div class=" container text-center py-3">
 
-        <form class="row g-3 w-50 mx-auto" name="frmProduto" action="insert">
+        <form class="row mb-3 w-50 mx-auto" name="frmProduto" action="insert">
 
-            <div class="mb-3">
+            <div class="row mb-3">
 
-                <input type="text" name="nome" class="form-control" placeholder="Produto"
-                    aria-label="Digite nome do produto" required>
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
 
+                    <input type="email" class="form-control" id="inputEmail3">
+
+                </div>
             </div>
+
 
             <div class="mb-3">
 
