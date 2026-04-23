@@ -58,18 +58,86 @@
 
 }
 
-@media (max-width: 767px) {
+/* SMARTPHONE */
+@media (max-width: 576px) {
 
     #logo {
 
-        margin-bottom: 1rem;
+        max-width: 200px;
+
+    }
+
+    #logo-index {
+
+        max-width: 160px;
+        margin-bottom: 0;
+
+    }
+    
+    .titulo-pagina {
+
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        font-size: 1.5rem;
+
+    }
+
+    .titulo-pagina-index {
+
+        color: var(--azure);
+        align-items: center;
+        line-height: 1;
+        font-size: 4rem;
+        margin-top: 20px;
+        text-align: center;
 
     }
 
 }
 
-/* Desktop: Logo e Título lado a lado perfeitamente alinhados */
-@media (min-width: 768px) {
+/* TABLET */
+@media (max-width: 768px) {
+
+    #logo {
+
+        max-width: 200px;
+        margin-bottom: 0;
+        margin-right: 200px;
+
+    }
+
+    #logo-index {
+
+        max-width: 200px;
+        margin-bottom: 0;
+
+    }
+    
+    .titulo-pagina {
+
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        font-size: 3.5rem;
+
+    }
+
+    .titulo-pagina-index {
+
+        color: var(--azure);
+        align-items: center;
+        line-height: 1;
+        font-size: 4rem;
+        margin-top: 20px;
+        text-align: center;
+
+    }
+
+}
+
+/* COMPUTADOR */
+@media (min-width: 1200px) {
 
     #logo {
 
