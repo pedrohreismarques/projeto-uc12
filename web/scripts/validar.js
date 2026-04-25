@@ -1,4 +1,5 @@
 function validar() {
+    
     let nome = frmProduto.nome.value
     let fab = frmProduto.fab.value
     let categoria = frmProduto.categoria.value
@@ -41,4 +42,5 @@ function validar() {
     else {
         document.forms["frmProduto"].submit()
     }
+
 }
